@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
         port = std::stoi(argv[1]); // Allow port to be set by the user
 
     RedisServer server(port);
+    server.run();
 
     return 0;
 }
